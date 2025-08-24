@@ -3,3 +3,12 @@
 @plugin "daisyui" {
     themes: dark --default;
 }
+
+@theme {
+    --width-rscreen: 100dvw;
+    --min-width-rscreen: 100dvw;
+    --max-width-rscreen: 100dvw;
+    --height-rscreen: 100dvh;
+    --min-height-rscreen: 100dvh;
+    --max-height-rscreen: 100dvh;
+}
