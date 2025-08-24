@@ -12,3 +12,9 @@
     --min-height-rscreen: 100dvh;
     --max-height-rscreen: 100dvh;
 }
+
+@layer base {
+    * {
+        @apply select-none;
+    }
+}
