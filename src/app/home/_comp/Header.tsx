@@ -9,7 +9,7 @@ function Header() {
     });
 
     return (
-        <header className="w-full h-16 flex items-center justify-between px-4">
+        <header className="fixed top-0 left-0 w-full h-16 flex items-center justify-between px-4">
             <h1 className="text-2xl font-bold text-primary">Shafin</h1>
             <div className="flex items-center gap-2">
                 <button className="btn btn-ghost">
