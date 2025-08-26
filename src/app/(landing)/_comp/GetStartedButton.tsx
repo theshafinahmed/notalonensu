@@ -1,5 +1,6 @@
 "use client";
 
+import Button from "@/lib/components/custom/Button";
 import { useRouter } from "next/navigation";
 
 function GetStartedButton() {
@@ -11,12 +12,9 @@ function GetStartedButton() {
 
     return (
         <div className="my-4">
-            <button
-                onClick={handleGetStarted}
-                className="btn btn-primary btn-lg duration-100"
-            >
+            <Button onClick={handleGetStarted} className="btn-primary btn-lg ">
                 Get Started
-            </button>
+            </Button>
         </div>
     );
 }

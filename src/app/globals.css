@@ -47,12 +47,11 @@
 }
 
 @utility btn {
-    transition: 0.2s;
-    @apply rounded-full uppercase shadow-none border-1 border-black/5 active:scale-90 active:translate-y-1!;
+    @apply rounded-full uppercase shadow-none border-1 border-black/5;
 }
 
 @utility btn-ghost {
-    @apply border-none active:scale-90 active:translate-y-0!;
+    @apply border-none;
 }
 
 @theme {
