@@ -13,7 +13,7 @@ function GetStartedButton() {
         <div className="my-4">
             <button
                 onClick={handleGetStarted}
-                className="btn btn-primary btn-lg rounded-md duration-100"
+                className="btn btn-primary btn-lg duration-100"
             >
                 Get Started
             </button>

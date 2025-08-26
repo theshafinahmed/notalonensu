@@ -47,12 +47,12 @@
 }
 
 @utility btn {
-    transition: 0.1s;
-    @apply rounded-md shadow-none border-b-black/30 border-b-4 active:scale-95 active:border-b-1 active:translate-y-1!;
+    transition: 0.2s;
+    @apply rounded-full uppercase shadow-none border-1 border-black/5 active:scale-90 active:translate-y-1!;
 }
 
 @utility btn-ghost {
-    @apply border-none active:scale-90 active:border-b-0 active:translate-y-0!;
+    @apply border-none active:scale-90 active:translate-y-0!;
 }
 
 @theme {
