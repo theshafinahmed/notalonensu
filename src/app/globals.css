@@ -51,6 +51,10 @@
     @apply rounded-md shadow-none border-black/30 border-1 border-b-4 active:scale-95 active:border-b-1 active:translate-y-1!;
 }
 
+@utility btn-ghost {
+    @apply border-none active:scale-90 active:border-b-0 active:translate-y-0!;
+}
+
 @theme {
     --width-rscreen: 100dvw;
     --min-width-rscreen: 100dvw;
