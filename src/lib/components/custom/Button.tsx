@@ -1,19 +1,18 @@
 "use client";
 
-import { HTMLMotionProps, motion } from "framer-motion";
+import { HTMLMotionProps, motion } from "motion/react";
 
 type ButtonProps = HTMLMotionProps<"button">;
 
 function Button({ children, className, ...props }: ButtonProps) {
     return (
         <motion.button
-            whileTap={{
-                scale: 0.9,
-                transition: {
-                    type: "spring",
-                    bounce: 0.6,
-                    duration: 0.2,
-                },
+            whileTap={{ scale: 0.9 }}
+            transition={{
+                type: "spring",
+                stiffness: 1000,
+                damping: 10,
+                mass: 1,
             }}
             className={`btn ${className}`}
             {...props}
