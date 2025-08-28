@@ -2,8 +2,15 @@
 
 import Button from "@/lib/components/custom/Button";
 import { motion } from "motion/react";
+import { useRouter } from "next/navigation";
 
 function FinishSetupCard() {
+    const router = useRouter();
+
+    const handleClick = () => {
+        router.push("/setup");
+    };
+
     return (
         <motion.div
             drag
@@ -12,7 +19,7 @@ function FinishSetupCard() {
         >
             <h1 className="text-2xl font-bold">Want to join hangouts?</h1>
             <p>A little more steps required to get started</p>
-            <Button className="btn btn-neutral mt-4">
+            <Button onClick={handleClick} className="btn btn-neutral mt-4">
                 Finish Required Steps
             </Button>
         </motion.div>
